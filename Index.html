@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Window</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/reset.css">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <script src="/src/js/script.js"></script>
+</head>
+<body>
+  <header class="title">Select, then change text strings</header> 
+
+  <div class="modal" id="my-modal">
+    <div class="main">
+      <div class="main__title">Are you sure?</div>
+      <div class="main__text">All your changes will be <span>deleted</span> and you will no longer be able to&nbsp;access them.</div>
+      
+      <div class="main-btn">
+        <button class="btnClose">Cancel</button>
+        <button class="btnClose">Hide Me</button>
+        <button class="btnClose">Yes, I’m sure</button>
+      </div>
+    </div>
+
+    <div class="footer" >
+      <button class="footer__btn btnClose">Hide Me</button>
+      <img src="/src/img/arrow.png" alt="arrow" class="footer__image">
+      <span class="footer__info">Hide Layer</span>
+    </div>
+  </div>
+
+<div class="footer" id="btnOpen">
+  <button class="footer__btn">Quit</button>
+</div>
+
+<script defer src="/src/js/script.js"></script>
+</body>
+</html>
